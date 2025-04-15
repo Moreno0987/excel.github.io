@@ -25,7 +25,7 @@ const Blog: React.FC = () => {
               {/* Gambar */}
               <div className="relative w-full h-48">
                 <Image
-                  src={`/blog${num}.png`}
+                  src={`/Blog${num}.png`} // Ubah src sesuai nama file di public
                   alt={`Blog Post ${num}`}
                   fill
                   className="object-cover"
