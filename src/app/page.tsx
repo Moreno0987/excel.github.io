@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Navbar from "./navbar";
 import About from "./About";
 import Process from "./Process";
