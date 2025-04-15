@@ -27,7 +27,7 @@ const Portfolio: React.FC = () => {
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  priority={num === 1} // preload gambar pertama
+                  priority={num === 1}
                 />
               </div>
 
@@ -64,13 +64,13 @@ const Portfolio: React.FC = () => {
       {/* Project Discussion Section */}
       <section className="bg-gray-900 text-white py-16 text-center px-6 md:px-20 lg:px-40">
         <h2 className="text-3xl font-bold">Do you have a Project Idea?</h2>
-        <p className="text-lg mt-2">Let's discuss your project!</p>
+        <p className="text-lg mt-2">Let&rsquo;s discuss your project!</p>
         <p className="text-gray-400 mt-2">
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration.
         </p>
         <button className="mt-6 bg-purple-600 text-white px-6 py-2 rounded-md">
-          Let's work together
+          Let&rsquo;s work together
         </button>
       </section>
     </>
