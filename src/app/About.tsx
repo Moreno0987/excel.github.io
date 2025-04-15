@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   FaFacebookF,
   FaDribbble,
@@ -20,9 +21,11 @@ const About = () => {
           <div className="flex flex-col items-center">
             {/* Bungkus abu-abu untuk foto dan ikon sosial */}
             <div className="bg-gray-100 rounded-lg flex flex-col items-center w-[300px] sm:w-[330px] md:w-[350px] lg:w-[370px]">
-              <img
+              <Image
                 src="/brooklin.png"
                 alt="Profile"
+                width={400}
+                height={400}
                 className="w-full h-[360px] sm:h-[380px] md:h-[400px] object-cover rounded-lg"
               />
 
@@ -58,7 +61,7 @@ const About = () => {
             </p>
             <p className="text-sm text-gray-700 mt-4 leading-relaxed">
               I design and develop services for customers specializing in
-              stylish, modern websites & web services.
+              stylish, modern websites &amp; web services.
             </p>
 
             <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">

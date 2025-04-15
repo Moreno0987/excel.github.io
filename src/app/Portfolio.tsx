@@ -1,14 +1,10 @@
 import React from "react";
-import Image from "next/image"; // Import Image from Next.js
-
+import Image from "next/image";
 
 const Portfolio: React.FC = () => {
   return (
     <>
-      <section
-        className="bg-gradient-to-b from-gray-100 via-yellow-100 to-white py-16 px-6 md:px-20 lg:px-40"
-        style={{ background: "oklch(86.9% 0.005 56.366)" }}
-      >
+      <section className="bg-gradient-to-b from-gray-100 via-yellow-100 to-white py-16 px-6 md:px-20 lg:px-40">
         <div className="text-center">
           <h2 className="text-4xl font-bold text-gray-900">My Portfolio</h2>
           <p className="text-lg text-gray-700 mt-2">
@@ -23,14 +19,17 @@ const Portfolio: React.FC = () => {
               key={num}
               className="bg-white rounded-lg shadow-lg overflow-hidden"
             >
-              {/* Image - Ganti dengan komponen <Image /> dari Next.js */}
-              <Image
-                src={`/Gambar${num}.png`}
-                alt={`Project ${num}`}
-                width={500}
-                height={300}
-                className="w-full h-48 object-cover"
-              />
+              {/* Pastikan gambar berada di public/Gambar{num}.png */}
+              <div className="relative w-full h-48">
+                <Image
+                  src={`/Gambar${num}.png`}
+                  alt={`Project ${num}`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  priority={num === 1} // preload gambar pertama
+                />
+              </div>
 
               {/* Content */}
               <div className="p-5">

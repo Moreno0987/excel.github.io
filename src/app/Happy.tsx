@@ -85,7 +85,9 @@ const Happy: React.FC = () => {
         </p>
 
         <div className="mt-10 max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-lg border-l-4 border-purple-600 transition duration-300 ease-in-out">
-          <p className="text-lg text-gray-700 italic mb-4">"{message}"</p>
+          <p className="text-lg text-gray-700 italic mb-4">
+            &ldquo;{message}&rdquo;
+          </p>
           <p className="text-lg font-semibold text-gray-900">{`- ${name}`}</p>
           <span className="text-gray-500">{position}</span>
         </div>
